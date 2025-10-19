@@ -18,24 +18,24 @@ document.getElementById('countdown-form').addEventListener('submit', function(ev
     const diferencia = fechaFin - ahora;
 
     // Calcula los días, horas, minutos y segundos
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+    const dias1 = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas1 = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos1 = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos1 = Math.floor((diferencia % (1000 * 60)) / 1000);
 
     // Muestra los resultados en la página
-    document.getElementById('dias').innerText = dias;
-    document.getElementById('horas').innerText = horas;
-    document.getElementById('minutos').innerText = minutos;
-    document.getElementById('segundos').innerText = segundos;
+    document.getElementById('dias1').innerText = dias1;
+    document.getElementById('horas1').innerText = horas1;
+    document.getElementById('minutos1').innerText = minutos1;
+    document.getElementById('segundos1').innerText = segundos1;
 
     // Si la cuenta regresiva termina, muestra un mensaje y para el temporizador
     if (diferencia < 0) {
       clearInterval(window.intervalId);
-      document.getElementById('dias').innerText = '0';
-      document.getElementById('horas').innerText = '0';
-      document.getElementById('minutos').innerText = '0';
-      document.getElementById('segundos').innerText = '0';
+      document.getElementById('dias1').innerText = '0';
+      document.getElementById('horas1').innerText = '0';
+      document.getElementById('minutos1').innerText = '0';
+      document.getElementById('segundos1').innerText = '0';
       alert('¡La cuenta regresiva ha terminado!');
     }
   };

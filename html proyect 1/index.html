@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +17,9 @@
 <header>
 
 <img class="logo1" src="/html proyect 1/assets/Logo sin texto.png" alt="Logo">
-<h2 class="marca">Ardea  </h2>
-<h3 class="header-item">Atelier web</h3>
+<h2 class="marca">Ardea <span class="header-item"> Atelier Web</span> </h2>
 
 </header>
-
-<main>
 
 <aside>
     <a href="https://wa.me/5492235258303?text=¡Hola!%20Quiero%20más%20información%20sobre%20sus%20webs%20para%20eventos." class="net-item" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></a>
@@ -31,21 +28,61 @@
 
 </aside>
 
+<main>
+
 <h1>
     Tu historia en una web única....
 
 </h1> 
-<!Acá va un comentario > 
 
 <h3>Diseño web con espíritu humano.</h3>
 
-<!--ACA FALTA UN CARROUSELE-->
 
 <section id="section1">
-    <p> Te ofrecemos un diseño web elegante y personalizado para que puedas enviar invitaciones a tu evento</p>
-    <p> Vas a poder incluir en la invitación un link de confirmación, la posibilidad de conformar una lista de temas que no pueden faltar en tu fiesta, dress code, lista de regalos, agenda del evento en <span> google </span> calendar, configuración de recordatorios para cada invitado, ubicación precisa y  lo que necesites agregar.</p> 
+    <div class="section1-element">
+        <p> Te ofrecemos un diseño web <span>elegante y personalizado </span>  para que puedas enviar invitaciones a tu evento.</p>
+        <p> Vas a poder incluir en la invitación un link de confirmación, la posibilidad de conformar una lista de temas
+            que no pueden faltar en tu fiesta, dress code, lista de regalos, agenda del evento en <span> google </span>
+            calendar, configuración de recordatorios para cada invitado, ubicación precisa y lo que necesites agregar.
+        </p>
+        <p> También podés tener la opción de conformar una web para que los asistentes puedan dejarte mensajes, agregar las fotos y momentos que compartieron juntos, formular agradecimientos.</p>
+        <p> Esto les permite seguir reviviendo momentos mágicos luego de la fiesta por el tiempo que deseen seguir compartiéndolo.</p>
 
-    <p> ¿Cuánto falta para las fiestas? </p>
+    </div>
+    <div class="section1-element">
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/html proyect 1/assets/web-web.png" class="d-block w-100" alt="web1">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/html proyect 1/assets/web-web2.png" class="d-block w-100" alt="web2">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/html proyect 1/assets/web-food.png" class="d-block w-100" alt="comida">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/html proyect 1/assets/web-deportes.png" class="d-block w-100" alt="deportes">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="section2">
+    <p> En tu invitación vas a poder tener un <span> contador </span> que indique a todos cuánto falta para tu fiesta en <span> tiempo real </span>. Falta para año nuevo:  </p>
 
     <div class="contador-contenedor">
         <div id="dias" class="contador"> </div> 
@@ -55,10 +92,9 @@
         <div id="minutos" class="contador"> </div>
         <div class="contador" class="contador">   Minutos      </div>
         <div id="segundos" class="contador"> </div>
-        <div class="contador" class="contador">   Segundos      </div>   
+        <div class="contador" class="contador">   Segundos      </div>  
     </div>
 
-    <p> Para año nuevo </p>
 <!--
     <form id="countdown-form">
         <label for="fecha-objetivo">¿Y para tu evento?:</label>
@@ -67,16 +103,24 @@
     </form>
 
     <div id="cuenta-regresiva">
-        <p>Días: <span id="dias">0</span></p>
-        <p>Horas: <span id="horas">0</span></p>
-        <p>Minutos: <span id="minutos">0</span></p>
-        <p>Segundos: <span id="segundos">0</span></p>
+        <p>Días: <span id="dias1">0</span></p>
+        <p>Horas: <span id="horas1">0</span></p>
+        <p>Minutos: <span id="minutos1">0</span></p>
+        <p>Segundos: <span id="segundos1">0</span></p>
     </div>
--->
 
+-->
 </section>
 
-<section id="section2">
+<!-- desarrollar  -->
+<section id="section3">
+<a href="">Link de confirmacion</a>
+<a href="">Link de lista de spotify</a>
+<a href="">link al evento</a>
+<a href="">Ubicacion</a>
+</section>
+
+<section id="section4">
     <h3> ¿Quiénes somos? </h3>
     <img class="rounded float-start" src="/html proyect 1/assets/novia-y-novio-en-la-recepcion-de-la-boda.jpg" alt="boda">
     <p>Somos una empresa joven con ganas de unir el arte y el diseño web.</p>
@@ -87,14 +131,14 @@
     <a href="#"> Volver al inicio</a>
 </section>
 
-<section id="section3">
+<section id="section5">
     cuando? donde 
     <a href="#"> agendar </a>
     <a href="#"> ubicacion </a>
 
 </section>
 
-<section id="section 4"> 
+<section id="section6"> 
     <p>Dress code</p>
 <a href="https://wa.me/2235258303" target="_blank"> Contactar por WhatsApp</a>    
 <a href="#"> ¿camcion? link a lista de spotift</a>
