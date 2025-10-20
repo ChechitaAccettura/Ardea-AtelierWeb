@@ -92,17 +92,13 @@ p {
     font-optical-sizing: auto;
     text-indent: 15px;
     text-align: justify;
-}
-
-.rounded {
-    max-width: 150px;
-    height: auto;
+    margin: 1rem;
 }
 
 aside {
     background-color: rgba(0, 0, 0, 0.315);
     width: 50px;
-    height: 190px;
+    height: 180px;
     margin: 5px;
     border-radius: 5px;
     position: fixed;
@@ -130,6 +126,11 @@ i:hover {
 
 section {
     margin-top: 50px;
+    height: fit-content;
+}
+
+.rounded {
+    margin: 1rem;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  SECTION 1  >>>>>>>>>>>>>>>>>>>> */
@@ -137,7 +138,7 @@ section {
 #section1 {
     display: flex;
     align-items: center;
-    
+    height: fit-content;    
 }
 
 .section1-element {
@@ -174,6 +175,67 @@ span {
 
 #segundos {
     width: 30px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<  SECTION 3  >>>>>>>>>>>>>>>>>>>> */
+
+#section3 {
+    display: flex;
+}
+
+.section3-element {
+    width: 50%;
+    margin: auto;
+}
+
+.section3-link {
+    width: 50%;
+    margin: auto;
+    max-width: 150px;
+    height: auto;
+}
+
+.section3-link:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: transform 1.3s ease;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<  SECTION 4  >>>>>>>>>>>>>>>>>>>> */
+
+
+.section4-image {
+    max-width: 250px;
+    height: auto;
+    margin: 1rem;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<    FOOTER     >>>>>>>>>>>>>>>>>>>>*/
+
+footer {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.logo-footer {
+    margin-right: 2px;
+    border-radius: 50%;
+    height: 100px;
+}
+
+.footer-link {
+    justify-self: end;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color:black;
+    text-shadow: 1px 1px 3px whitesmoke;
+    align-self: center;
+    margin: 1rem;
+    padding-top: 1rem;
+
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  ANIMACIONES  >>>>>>>>>>>>>>>>>>>> */
