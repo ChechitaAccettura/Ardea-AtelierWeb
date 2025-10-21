@@ -41,6 +41,10 @@ main {
 
 }
 
+.just-mobile {
+    display: none;
+}
+
 header, footer{
     display: flex;
     align-items: center;
@@ -67,6 +71,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    text-shadow: 1px 1px 3px whitesmoke;
 }
 
 .header-item {
@@ -82,6 +87,7 @@ h1 {
 
 h3 {
     font-family: "Playfair Display", serif;
+    text-shadow: 1px 1px 3px whitesmoke;
     align-self: center;
     justify-self: center;
     clear: both;
@@ -102,7 +108,7 @@ aside {
     margin: 5px;
     border-radius: 5px;
     position: fixed;
-    top: 20%;
+    top: 35%;
     right: 0%;
     z-index: 99999;
     align-items: center;
@@ -151,12 +157,16 @@ span {
     font-size: large;
 }
 
+.carousel, .rounded { /*imagen del carousel*/
+    box-shadow: 8px 8px 15px rgb(51, 48, 48);
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  SECTION 2  >>>>>>>>>>>>>>>>>>>> */
 
 .contador-contenedor {
     display: flex;
     align-content: center;
-    justify-items: center;
+    justify-content: center;
     border: solid;
     border-radius: 20% 5% 20% 5%;
     border-color: rgb(214, 208, 219);
@@ -168,31 +178,40 @@ span {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: xx-large;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
-    margin: auto;
+    margin: 3px;
 }
 
 #segundos {
-    width: 30px;
+    width: 32px;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  SECTION 3  >>>>>>>>>>>>>>>>>>>> */
 
 #section3 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .section3-element {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60% !important;
     margin: auto;
 }
 
+.section3-element2 {
+    width: 40%;
+}
+
 .section3-link {
-    width: 50%;
-    margin: auto;
-    max-width: 150px;
-    height: auto;
+    margin: 5px;
+    width: 150px;
+    height:  150px;
 }
 
 .section3-link:hover {
@@ -226,16 +245,23 @@ footer {
 }
 
 .footer-link {
-    justify-self: end;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     color:black;
     text-shadow: 1px 1px 3px whitesmoke;
-    align-self: center;
     margin: 1rem;
     padding-top: 1rem;
+}
 
+.footer-link:hover {
+    font-weight: bold;
+    text-shadow: 3px 3px 7px rgb(255, 255, 255) !important;
+
+}
+
+.fa-house-chimney { /*logo home en el footer*/
+    margin: 5px;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  ANIMACIONES  >>>>>>>>>>>>>>>>>>>> */
@@ -246,7 +272,7 @@ footer {
     opacity: 0;
     }
   to {
-    transform: translateX(100px);
+    transform: translateX(25%);
     opacity: 1;
     }
 }
@@ -262,16 +288,103 @@ footer {
 }
 
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<  MEDIA   >>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<  MEDIA QUERY  >>>>>>>>>>>>>>>>>>>> */
 
 @media screen and (max-width: 768px) {
-    aside {
+    h1 {
+        font-size: 20px;
+
+    }
+
+    aside, .not-mobile {
         display: none;
     }
+
+    #section1 {
+        display: block;
+        align-items: center;
+        height: fit-content;    
+    }
+
+    .section1-element {
+        width: 80%;
+        margin: auto;
+    }
+    
+    @keyframes mover-despacio {
+        from {
+        transform: translateX(0);
+        opacity: 0;
+        }
+        to {
+        transform: translateX(5%);
+        opacity: 1;
+        }
+    }
+    .contador {
+        font-size: large;
+
+    }
+
+    #section3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .section3-element, .section3-element2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90% !important;
+        margin: 10px;
+    }
+
+
+    .section3-link {
+        margin: 5px;
+        width: 100px;
+        height:  100px;
+    }
+
+    .section4-image {
+        max-width: 30%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .section3-element {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .just-mobile {
+        display: block;
+    }
+
+    .logo-footer, .logo1 {
+        margin-right: 2px;
+        border-radius: 50%;
+        height: 80px;
 }
 
+}
+
+
+
 @media screen and (max-width: 430px) {
-  p {
-    color: red;
-  }
+    .section4-image {
+        max-width: 40%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .logo-footer, .logo1 {
+        margin-right: 2px;
+        border-radius: 50%;
+        height: 50px;
+}
+
+
 }
