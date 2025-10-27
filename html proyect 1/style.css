@@ -296,7 +296,7 @@ footer {
 
     }
 
-    aside, .not-mobile {
+    .not-mobile {
         display: none;
     }
 
@@ -378,6 +378,15 @@ footer {
         max-width: 40%;
         height: auto;
         margin: 1rem;
+    }
+
+    #segundos {
+        width: 25px;
+    }
+
+    .contador-contenedor {
+        border: 0px;
+        box-shadow: 0px 0px 0px ;
     }
 
     .logo-footer, .logo1 {

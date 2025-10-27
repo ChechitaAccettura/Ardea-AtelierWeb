@@ -1,0 +1,237 @@
+/** Elementos generales     **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    }
+
+body {
+    overflow-x: hidden; /*  para que al configurar un desplazamiento no se me agrande el eje X (que el body no exceda el 100%)*/
+    background-image: url('fondodehojas.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*para que no se mueva el fondo al scrollear */
+    align-content: center;
+    justify-content: center;
+    justify-items: center
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: 90%;
+    min-height: 50%;
+    align-items: center;
+    align-content: center;
+
+}
+
+.cartel-inicio {
+    display: block;
+    justify-items: center;
+}
+
+h1, .nombres {
+    font-family: "Italianno", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px !important;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.767);
+    animation-name: llegar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+h2 {
+    font-family: "Italianno";
+    font-size: 60px !important;
+    text-shadow: 1px 1px 3px whitesmoke;
+    animation-name: llegar-2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+h6, .loquepasa { 
+    font-family: "Lobster Two", sans-serif;
+    font-style: normal;
+    font-size: 30px !important;
+    font-weight: 400;
+    font-style: normal;
+    animation-name: llegar-3;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+
+.just-mobile {
+    display: none;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<    TARJETA    >>>>>>>>>>>>>>>>>>*/ 
+
+
+/* >>>>>>>>>>>>>>>>>>>>> section 1 <<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.section_presentacion {
+    width: 90%;
+    height: 250px;
+    background-color: rgba(233, 252, 238, 0.8);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.banner1 {
+    height: 200px;
+    display: block;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.img_section1 {
+    width: 150px;
+    align-self: center;
+    margin-left: 25px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>> SECTION 2 --- CONTADOR ------ <<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.section_contador {
+    background-image: url('circulo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 300px;
+    display: block;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.contador-contenedor {
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contador {
+    width: 40px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+.contador1 {
+    width: 40px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+
+/* <<<<<<<<<<<<<<<<<<    SECTION  3  >>>>>>>>>>>>>>>>>>>>   */
+
+
+.section_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.parrafo_de_frase {
+    margin-left: 20%; 
+    margin-right: 20%;   
+    text-indent: 5px;
+    text-align: center;
+    font-family: "Lobster Two", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.imagen_en_mensaje {
+    width: 150px;
+    height: auto;
+    margin: auto;
+    clear: both;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<  ANIMACIONES  >>>>>>>>>>>>>>>>>>>> */
+
+@keyframes llegar {
+    from {
+    transform: translateY(0);
+    opacity: 0;
+    }
+  to {
+    transform: translateY(25%);
+    opacity: 1;
+    }
+}
+
+@keyframes llegar-2 {
+    from {
+    transform: translateX(-25%);
+    opacity: 0;
+    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+@keyframes llegar-3 {
+    from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+    }
+}
