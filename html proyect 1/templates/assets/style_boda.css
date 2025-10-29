@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /*para que no se mueva el fondo al scrollear */
+    background-attachment: fixed; /* para que no se mueva el fondo al scrollear */
     align-content: center;
     justify-content: center;
     justify-items: center
@@ -85,14 +85,14 @@ h6, .loquepasa {
 
 /* >>>>>>>>>>>>>>>>>>>>> section 1 <<<<<<<<<<<<<<<<<<<<<<<<*/
 
-.section_presentacion {
+#section_presentacion {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
     width: 90%;
-    height: 250px;
-    background-color: rgba(233, 252, 238, 0.8);
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    min-height: 50%;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -115,19 +115,27 @@ h6, .loquepasa {
     margin-left: 25px;
 }
 
+.img_presentacion {
+    display: block; 
+    position: relative;
+    width: 300px;
+    height: auto;
+    border: solid 3px rgb(205, 255, 234);
+    border-radius: 3rem;
+    clear:both;
+}
+
 
 /* >>>>>>>>>>>>>>>>>>>> SECTION 2 --- CONTADOR ------ <<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-.section_contador {
-    background-image: url('circulo.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+#section_contador {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 80%;
-    height: 300px;
-    display: block;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
@@ -135,10 +143,12 @@ h6, .loquepasa {
 }
 
 .contador-contenedor {
-    width: 50%;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     align-content: center;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -150,9 +160,8 @@ h6, .loquepasa {
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
-    text-shadow: 2px 2px 5px rgb(255, 255, 255);
-    margin-left: 10px;
-    margin-right: 10px;
+    text-shadow: 3px 3px 7px rgb(255, 255, 255);
+    margin: auto;
     text-align: center;
 
 }
@@ -164,10 +173,8 @@ h6, .loquepasa {
     font-weight: 400;
     font-style: normal;
     font-size: medium;
-    text-shadow: 2px 2px 5px rgb(255, 255, 255);
-    margin: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    text-shadow: 3px 3px 7px rgb(255, 255, 255);
+    margin: auto;
     text-align: center;
 
 }
@@ -176,7 +183,13 @@ h6, .loquepasa {
 /* <<<<<<<<<<<<<<<<<<    SECTION  3  >>>>>>>>>>>>>>>>>>>>   */
 
 
-.section_3 {
+#section_3 {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,10 +211,148 @@ h6, .loquepasa {
 .imagen_en_mensaje {
     width: 150px;
     height: auto;
-    margin: auto;
-    clear: both;
+    margin:auto;
 }
 
+
+/* <<<<<<<<<<<<<<<<<<    SECTION  4  >>>>>>>>>>>>>>>>>>>>   */
+
+#section_4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.ceremonia, .fiesta {
+    width: 80%;
+    height: fit-content;
+    padding: 2rem;
+    background-image: url('flores_de_fondo.png');
+    background-repeat: no-repeat;
+    background-size: 30vw auto;
+    text-align: center;
+
+}
+
+.presentacion_de_evento {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Italianno";
+    font-size: 40px;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+
+.especificaciones_de_evento {
+    margin: 15px;
+    font-family: "Lobster Two", sans-serif;
+    font-style: normal;
+    font-size: medium;
+    font-style: normal;
+}
+
+button  {
+    background-color: rgb(192, 223, 215);
+    padding: 10px 30px;
+    border: solid 2px gray;
+    border-radius: 25% !important;
+}
+
+button:hover {
+  background-color:rgb(174, 204, 197);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil al pasar el mouse */
+}
+
+button:active {
+    background-color: rgba(192, 223, 215, 0.719);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(1px);
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<      section_5_galeriayconfirmacion        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#section_5_galeriayconfirmacion {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila_galeria {
+    display: flex;
+}
+
+.confirmacion {
+    margin: 1rem;
+    font-family: "Lobster Two", sans-serif;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>  MAPA DE SECCIONES ><<<<<<<<<<<<<<<<<<<<<<<<<<*/ 
+
+#mapa_de_secciones {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.agradecimientos {
+    color: gray;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<  FOOTER  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: 90%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    }
+
+.logo-footer {
+    width: 70px;
+}
+
+.marca_footer {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing:auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.atelier_footer {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  ANIMACIONES  >>>>>>>>>>>>>>>>>>>> */
 
@@ -234,4 +385,24 @@ h6, .loquepasa {
   to {
     opacity: 1;
     }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<< MEDIA QUERYS    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 768px) {
+    .section_contador {
+        background-image: url('circulo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .fila_galeria, #mapa_de_secciones {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
 }

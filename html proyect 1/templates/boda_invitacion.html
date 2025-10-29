@@ -12,16 +12,17 @@
     <title>Ceci y Lau</title>
 </head>
 <body>
-    <section class="section_presentacion"> 
+    <section id="section_presentacion"> 
         <div class="banner1">
             <div class="nombres">Ceci y Lau</div>
             <div class="loquepasa">Nos casamos</div>
             <img class="img_section1" src="/html proyect 1/templates/assets/flores.png" alt="flores">
         </div>
     </section>
+    
+    <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/mujeres-de-tiro-medio-que-se-casan.jpg" alt="ellas">
 
-
-    <section class="section_contador">
+    <section id="section_contador">
             <p class="loquepasa"> Faltan  </p>
 
     <div class="contador-contenedor">
@@ -40,7 +41,7 @@
 
     </section>
 
-    <section class="section_3">
+    <section id="section_3">
         <div>
             <p class="parrafo_de_frase">El amor que nos une hoy nos ilumina cada día.</p>
             <p class="parrafo_de_frase"> Queremos compartir con uds este momento para celebrar nuestra unión y la felicidad de que nuestras familias y nuestros amigos y amigas nos acompañen.</p>
@@ -49,41 +50,54 @@
 
         <img class="imagen_en_mensaje" src="/html proyect 1/templates/assets/rings.png" alt="anillos">
 
-        <div> 
-            Ceremonia ¿?cuando ¿?donde
+    </section>
+
+    <section id="section_4">
+        <div class="ceremonia"> 
+            <p class="presentacion_de_evento"> Ceremonia </p>
+            <p class="especificaciones_de_evento"> Capilla Nuestra señora de Lourdes. </p>
+            <p class="especificaciones_de_evento" > Septiembre 2026 </p>
+            <a class="confirmacion" href="https://calendar.google.com/calendar/u/0/r" target="_blank"> <button> Agendar </button></a>
+    
         </div>
-        <div>
-            Fiesta ¿?cuando ¿?donde
+        <div class="fiesta">
+           <p class="presentacion_de_evento"> Fiesta </p>
+            <p class="especificaciones_de_evento"> Salón del Bosque </p>
+            <p class="especificaciones_de_evento" > <br> </p>
+            <a  class="confirmacion" href="https://www.google.com/maps" target="_blank"> <button> Cómo llegar </button></a>        </div>
+    </section>
+
+    <section id="section_5_galeriayconfirmacion">
+        
+        <div class="galeria">
+
+            <div class="fila_galeria">
+                <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/vista-lateral-de-las-mujeres-que-se-casan.jpg" alt="ellas">
+                <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/estrellas-de-mar-retenidas-junto-al-mar.jpg" alt="ellas">
+            </div>
+
+            <div class="fila_galeria">
+                <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/mujeres-mayores-manos.jpg" alt="ellas">
+                <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/primer-plano-de-pies.jpg" alt="ellas">
+            </div>
+    
         </div>
+        <a class="confirmacion" href="https://wa.me/5492235258303?text=¡Hola!%20Quiero%20más%20información%20sobre%20sus%20webs%20para%20eventos." target="_blank"> <button>  Confirmar asistencia </button></a>
+
+
     </section>
 
-    <section>
-        Confirmar asistencia
-        seccion de fotos
+    <section id="mapa_de_secciones"> 
+        <a class="confirmacion"  href="#section_contador"> <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/cuanto_falta.png" alt="seccion_contador"> </a>
+        <a class="confirmacion"  href="#section_5_galeriayconfirmacion"> <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/link_sugerir_cancion.png" alt="confirmacion"> </a>
+        <a class="confirmacion"  href="#section_4"> <img class="img-fluid img_presentacion" src="/html proyect 1/templates/assets/Dress Code.png" alt="ellas"></a>
     </section>
-
-    <section>
-        Sugerir cancion
-        dress code
-        lista de regalos
-    </section>
-
-    <section>
-        Comparti tus fotos 
-        insta del evento o pagina del evento
-    </section>
-
-    <section> 
-
-        Mapa de secciones link a secciones anteriores
-    </section>
+        <p class="agradecimientos"> Con ayuda de Freepik.es <i class="fa-solid fa-photo-film"></i> </p>
 
     <footer>     
-        <p>Hecho con amor por</p>
+        <p class="atelier_footer" >Hecho con ❤️ por</p>
         <img class="logo-footer" src="/html proyect 1/assets/ardea-transparente-sintexto.png" alt="Logo">
-        <h2 class="marca"> <span class="header-item"> <i class="fa-regular fa-registered"></i> </span> Ardea <span class="header-item"> Atelier Web</span> </h2>
-        <a class="footer-link not-mobile" href="#"> Inicio <i class="fa-solid fa-house-chimney"></i></a>
-        <a class="footer-link just-mobile" href="#"><i class="fa-solid fa-house-chimney"></i></a>
+        <p class="marca_footer"> Ardea <span class="atelier_footer"> Atelier Web</span> </p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

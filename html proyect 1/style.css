@@ -139,6 +139,30 @@ section {
     margin: 1rem;
 }
 
+.confirmacion {
+    margin: 1rem;
+    font-family: "Lobster Two", sans-serif;
+    text-decoration: none;
+}
+
+button  {
+    background-color: rgb(192, 223, 215);
+    padding: 10px 30px;
+    border: solid 2px gray;
+    border-radius: 25% !important;
+}
+
+button:hover {
+  background-color:rgb(174, 204, 197);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil al pasar el mouse */
+}
+
+button:active {
+    background-color: rgba(192, 223, 215, 0.719);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(1px);
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  SECTION 1  >>>>>>>>>>>>>>>>>>>> */
 
 #section1 {
