@@ -1,0 +1,476 @@
+/** Elementos generales     **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    /* heigt: 100% para que no se suba el footer cuando el body tiene poco contenido*/
+    }
+
+body {
+    overflow-x: hidden; /*  para que al configurar un desplazamiento no se me agrande el eje X (que el body no exceda el 100%)*/
+    background-image: url('fondo_de_torta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* para que no se mueva el fondo al scrollear */
+    display: flex;
+    justify-content: center;
+    justify-items: center
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: 90%;
+    min-height: fit-content;
+    align-items: center;
+    align-content: center;
+
+}
+
+.cartel-inicio {
+    display: block;
+    justify-items: center;
+}
+
+
+h1, .nombres {
+    margin: 3rem;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px !important;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.767);
+    animation-name: llegar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+h2 {
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 50px !important;
+    text-shadow: 1px 1px 3px whitesmoke;
+    animation-name: llegar-2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+h6, .loquepasa { 
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-size: 40px !important;
+    font-style: normal;
+
+}
+
+#entrar {
+    font-family: "Charm", cursive;
+    display: block;
+    font-size: x-large;
+    justify-items: center;
+    animation-name: llegar-3;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+.just-mobile {
+    display: none;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<    TARJETA    >>>>>>>>>>>>>>>>>>*/ 
+
+
+/* >>>>>>>>>>>>>>>>>>>>> section 1 <<<<<<<<<<<<<<<<<<<<<<<<*/
+
+#section_presentacion {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 18px rgb(26, 25, 25);
+    margin: 2rem auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content:center;
+}
+
+#section_presentacion:hover, #section_contador:hover {
+    box-shadow: inset 3px 3px 18px rgb(26, 25, 25);
+    transform: translateY(1px);
+
+}
+
+
+.banner1 {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.img_section1 {
+    width: 200px;
+}
+
+.img_presentacion {
+    margin: auto;
+    width: 50%;
+    border: solid 3px rgb(205, 255, 234);
+    border-radius: 3rem;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>> SECTION 2 --- CONTADOR ------ <<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+#section_contador {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    box-shadow: 3px 3px 18px rgb(26, 25, 25);
+    margin: 20px auto 20px auto;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    animation: contador 5s ease infinite; 
+
+}
+
+.contador-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contador {
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-shadow: 3px 3px 7px rgb(255, 255, 255);
+    margin: auto;
+    text-align: center;
+
+}
+
+.contador1 {
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    text-shadow: 3px 3px 7px rgb(255, 255, 255);
+    margin: auto;
+    text-align: center;
+
+}
+
+.encabezado_contador {
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    text-shadow: 0px 7px 10px whitesmoke;   
+}
+
+
+/* <<<<<<<<<<<<<<<<<<    SECTION  3  >>>>>>>>>>>>>>>>>>>>   */
+
+
+#section_3 {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.parrafo_de_frase {   
+    text-indent: 5px;
+    text-align: center;
+    font-family: "Island Moments";
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.imagen_en_mensaje {
+    width: 100px;
+    height: auto;
+    margin:auto;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<    SECTION  4  >>>>>>>>>>>>>>>>>>>>   */
+
+#section_4 {
+    background-image: url('globos_azules.png');
+    background-repeat: no-repeat;
+    background-size: auto 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items:last baseline;
+    margin-top: 20px;
+
+}
+
+.ceremonia, .fiesta {
+    width: 80%;
+    height: fit-content;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.presentacion_de_evento {
+    border-radius: 0% 50% 50% 50%;
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.445);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Island Moments", cursive;
+    font-size: 60px;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+
+.especificaciones_de_evento {
+    font-family: "Quintessential", serif;
+    margin: 15px;
+    font-size: 25px;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+
+button  {
+    background-color: rgb(233, 207, 240);
+    padding: 10px 30px;
+    border: solid 2px gray;
+    border-radius: 25% !important;
+}
+
+button:hover {
+  background-color: rgb(233, 207, 240);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil al pasar el mouse */
+}
+
+button:active {
+    background-color: rgba(233, 207, 240, 0.719);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(1px);
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<      section_5_galeriayconfirmacion        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#section_5_galeriayconfirmacion {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.fila_galeria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+
+
+}
+
+.img_galeria {
+    margin: 15px auto 15px auto;
+    width: 45%;
+    border: solid 3px rgb(205, 255, 234);
+    border-radius: 3rem;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.726);
+}
+
+.confirmacion {
+    margin: 1rem;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>  MAPA DE SECCIONES ><<<<<<<<<<<<<<<<<<<<<<<<<<*/ 
+
+#mapa_de_secciones {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.video_seccionfinal {
+    width: 90%;
+    border-radius: 50%
+ }
+.agradecimientos {
+    color: rgb(78, 77, 77);
+    text-align: center;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<  FOOTER  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: 90%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    }
+
+.logo-footer {
+    width: 70px;
+}
+
+.marca_footer {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing:auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.atelier_footer {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.net-item {
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+}
+
+.net-item:hover {
+    opacity: 100%;
+}
+
+i:hover {
+    transform: scale(1.2);
+    transition: transform 1.3s ease;
+    text-shadow: 2px 2px 2px white;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<  ANIMACIONES  >>>>>>>>>>>>>>>>>>>> */
+
+@keyframes llegar {
+    from {
+    transform: translateY(0);
+    opacity: 0;
+    }
+  to {
+    transform: translateY(25%);
+    opacity: 1;
+    }
+}
+
+@keyframes llegar-2 {
+    from {
+    transform: translateX(-25%);
+    opacity: 0;
+    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+@keyframes llegar-3 {
+    from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+    }
+}
+
+@keyframes contador {
+    0%{border-radius: 0% 25% 0% 25%;}
+    50% {border-radius: 25% 0% 25% 0%;}
+    100% {border-radius: 0% 25% 0% 25%;}
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<< MEDIA QUERYS    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 768px) {
+
+    .img_presentacion {
+        width: 85%;
+    }
+    #section_4 {
+        flex-direction: column;
+
+    }
+    
+    .fila_galeria, #mapa_de_secciones {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+}
