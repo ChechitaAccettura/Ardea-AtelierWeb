@@ -9,7 +9,6 @@
 html, body {
     display: flex;
     flex-direction: column;
-    /* heigt: 100% para que no se suba el footer cuando el body tiene poco contenido*/
     }
 
 body {
@@ -40,6 +39,7 @@ main {
 .cartel-inicio {
     display: block;
     justify-items: center;
+    margin: 10%;
 }
 
 
@@ -156,7 +156,7 @@ h6, .loquepasa {
     align-content: center;
     justify-content: center;
     justify-items: center;
-    animation: contador 5s ease infinite; 
+    animation: contador 3s ease infinite; 
 
 }
 
@@ -241,15 +241,13 @@ h6, .loquepasa {
 /* <<<<<<<<<<<<<<<<<<    SECTION  4  >>>>>>>>>>>>>>>>>>>>   */
 
 #section_4 {
-    background-image: url('globos_azules.png');
-    background-repeat: no-repeat;
-    background-size: auto 40vh;
+
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-items: center;
     justify-content: center;
-    align-items:last baseline;
+    align-items: last baseline;
     margin-top: 20px;
 
 }
@@ -367,7 +365,7 @@ button:active {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.3);
@@ -380,8 +378,14 @@ footer {
 
     }
 
+.fila_en_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .logo-footer {
-    width: 70px;
+    width: 50px;
 }
 
 .marca_footer {
@@ -459,10 +463,21 @@ i:hover {
 @media screen and (max-width: 768px) {
 
     .img_presentacion {
-        width: 85%;
+        width: 90%;
     }
     #section_4 {
         flex-direction: column;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .ceremonia, .fiesta {
+    width: 100%; 
+    }
+
+    .img_galeria {
+    width: 85%; 
 
     }
     
@@ -471,6 +486,18 @@ i:hover {
         justify-content: center;
         justify-items: center;
 
+    }
+
+    .contador_encabezado {
+        font-size: x-large;
+    }
+
+    .contador1 {
+        font-size: large;
+    }
+
+    .contador {
+        font-size: 40px;
     }
 
 }

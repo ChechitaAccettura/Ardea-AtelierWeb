@@ -37,7 +37,6 @@ main {
     border-radius: 1rem;
     margin: 2rem auto;
     width: 95%;
-    height: auto;
 
 }
 
@@ -83,6 +82,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    color: darkslategrey;
 }
 
 h3 {
@@ -139,9 +139,11 @@ section {
     margin: 1rem;
 }
 
-.confirmacion {
+.confirmacion, #ejemplos {
     margin: 1rem;
     font-family: "Lobster Two", sans-serif;
+    font-size: x-large;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -259,6 +261,7 @@ span {
 footer {
     display:flex;
     justify-content: space-between;
+    width: 100vw;
 
 }
 
@@ -288,6 +291,20 @@ footer {
     margin: 5px;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< MODALES >>>>>>>>>>>>>>>>>>>> */
+
+.modal-body, .link_mockup {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+.img_link_mockup {
+    width: 90%;
+    margin: auto;
+}
+
+
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<  ANIMACIONES  >>>>>>>>>>>>>>>>>>>> */
 
 @keyframes mover-despacio {
@@ -300,6 +317,7 @@ footer {
     opacity: 1;
     }
 }
+
 
 @keyframes aparecer {
     from {
@@ -335,16 +353,6 @@ footer {
         margin: auto;
     }
     
-    @keyframes mover-despacio {
-        from {
-        transform: translateX(0);
-        opacity: 0;
-        }
-        to {
-        transform: translateX(5%);
-        opacity: 1;
-        }
-    }
     .contador {
         font-size: large;
 
@@ -393,9 +401,18 @@ footer {
         height: 80px;
 }
 
+@keyframes mover-despacio {   /* dentro de la QUERY */
+        from {
+        transform: translateX(0);
+        opacity: 0;
+        }
+        to {
+        transform: translateX(5%);
+        opacity: 1;
+        }
+    }
+
 }
-
-
 
 @media screen and (max-width: 430px) {
     .section4-image {
