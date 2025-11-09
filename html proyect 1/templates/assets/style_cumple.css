@@ -1,0 +1,318 @@
+/*     <<<<<<<<<<<<<<<<<<<<<<   ELEMENTOS GENERALES >>>>>>>>>>>>>>>>>>>>>>>   */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%; /* para que el doc ocupe por lo menos el 100 del alto y no queden los  */
+    display: flex;
+    justify-items: center;
+    align-content: center;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow-x: hidden; /*  para que al configurar un desplazamiento no se me agrande el eje X (que el body no exceda el 100%)*/
+    background: #3a2c96;
+    background: linear-gradient(149deg, rgba(58, 44, 150, 1) 0%, rgba(87, 199, 133, 1) 34%, rgba(178, 212, 103, 1) 50%, rgba(87, 199, 133, 1) 64%, rgba(58, 44, 150, 1) 100%);
+    background-size: 200vw 200vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*para que no se mueva el fondo al scrollear */
+    animation: fondo 15s ease infinite;
+    
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+
+}
+
+.nombre {
+    font-style: italic;
+    font-family: "Butterfly Kids", cursive;
+    font-size: 60px;
+    font-weight: 700;
+    animation: cartel 5s ease infinite;
+}
+
+.anios {
+    font-family: "Butterfly Kids", cursive;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: normal;
+    animation: cartel 5s ease infinite;
+}
+
+.cartel_inicio {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+.boton1 {
+    background-color: rgb(114, 175, 144);
+    padding: 1rem 2rem;
+    border: solid 2px gray;
+    border-radius: 50% 0 50% 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 1em;
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    animation: sombra 5s ease infinite;
+}
+
+.boton1:hover {
+    background-color: rgb(86, 133, 109);
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
+
+.boton1:active {
+    background-color: rgb(58, 185, 122);
+    box-shadow: inset 2px 5px 7px rgba(0, 0, 0, 0.5); 
+    transform: translateY(1px);
+    color: black;
+}
+
+.img-inicio {
+    width: 200px;
+}
+
+.texto_cartel {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<      INVITACION >>>>>>>>>>>>>>>>>>> */
+
+section {
+    margin-top : 2rem;
+}
+/* <                 SECTION 1         > */
+
+#section_presentacion {
+    width: 100vw;
+}
+
+.img_presentacion {
+    width: 60%;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.5);
+
+}
+
+.nombres, .encabezado_contador {
+    font-family: "News Cycle", sans-serif;
+    font-size: xx-large;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.nombres {
+    animation: llegar 2s ease 1;
+    animation-fill-mode: forwards; 
+
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<  SECTION 2  >>>>>>>>>>>>>>>>>>>> */
+
+#section_contador {
+    background-image: url('cuadro1.png');
+    background-size: 25vh;
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+    width: 100%;
+    height: 300px;
+    align-content:center;
+}
+
+.contador-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+}
+
+.contador {
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    margin: auto;
+    animation: cartel 5s ease infinite;
+    
+}
+
+.contador1, .parrafo_de_frase {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    margin: auto;
+}
+
+/*   >>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTION 4 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/ 
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< section 5 >>>>>>>>>>>>>>>>>>>>>>>>>> */
+.galeria {
+    flex-direction: column;
+}
+
+.fila_galeria {
+    flex-direction: row;
+}
+
+.img_galeria {
+    width: 45%;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<  FOOTER  >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    }
+
+.fila_en_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 50px;
+}
+
+.marca_footer {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing:auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.atelier_footer {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.net-item {
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+}
+
+.net-item:hover {
+    opacity: 100%;
+}
+
+i:hover {
+    transform: scale(1.2);
+    transition: transform 1.3s ease;
+    text-shadow: 2px 2px 2px white;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<< animaciones >>>>>>>>>>>>>>>>>>>  */
+
+@keyframes fondo {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%;}
+}
+
+@keyframes cartel {
+    0% { color: rgba(58, 44, 150, 1);
+    text-shadow: 2px 2px 2px rgb(41, 185, 161);}
+    50% { color:  rgb(41, 185, 161);
+    text-shadow: 2px 2px 2px rgb(55, 37, 172)}
+    100% { color:rgba(58, 44, 150, 1);
+    text-shadow: 2px 2px 2px rgb(41, 185, 161);}
+}
+
+@keyframes llegar {
+    from {
+    transform: translateY(0);
+    opacity: 0;
+    }
+  to {
+    transform: translateY(25%);
+    opacity: 1;
+    }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<< MEDIA QUERYS    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 768px) {
+    
+    .img_presentacion {
+        width: 80%;
+    }
+    .contador {
+        font-size: 50px;
+    }
+    .contador1 {
+        font-size: large;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .img_presentacion {
+        width: 90%;
+    }
+    .contador {
+        font-size: 30px;
+    }
+    .contador1 {
+        font-size: medium;
+    }
+}
